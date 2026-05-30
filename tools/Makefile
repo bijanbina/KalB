@@ -107,7 +107,6 @@ sclite sctk_made: sctk/.compiled
 sctk/.compiled: sctk
 	rm -f sctk/.compiled
 	$(SCTK_MKENV) $(MAKE) -C sctk config
-	$(SCTK_MKENV) $(MAKE) -C sctk all doc
 	$(MAKE) -C sctk install
 	touch sctk/.compiled
 
